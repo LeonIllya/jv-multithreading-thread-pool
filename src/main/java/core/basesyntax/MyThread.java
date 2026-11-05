@@ -9,6 +9,6 @@ public class MyThread implements Callable<String> {
     public String call() throws InterruptedException {
         long sleepTime = ThreadLocalRandom.current().nextLong(100, 1001);
         Thread.sleep(sleepTime);
-        return "Task duration was "  + sleepTime + " ms, execution finished at " + LocalTime.now();
+        return "Task duration was " + sleepTime + " ms, execution finished at " + LocalTime.now();
     }
 }
